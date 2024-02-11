@@ -13,8 +13,8 @@ const Footer = () => {
                     </div>
                     <div className="media-icons">
                         <Link to="https://www.instagram.com/thejalajpandey/"><i className="fab fa-instagram"></i></Link>
-                        <Link to="https://www.linkedin.com/in/jalaj-pandey/"><i className="fab fa-linkedin-in"></i></Link>
-                        <Link to="https://github.com/jalaj-pandey"><i className="fa fa-github"></i></Link>
+                        <Link to="https://www.linkedin.com/in/jalaj-pandey/"><i className="fa-solid fa-camera-retro" aria-hidden="true"></i></Link>
+                        <Link to="https://github.com/jalaj-pandey"><i className="fa-brands fa-github"></i></Link>
                     </div>
                 </div>
                 <div className="link-boxes">

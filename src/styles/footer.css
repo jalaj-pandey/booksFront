@@ -37,10 +37,10 @@ footer {
     transition: all 0.4s ease;
   }
   .top .media-icons a:nth-child(1) {
-    background: #4267b2;
+    background: #d10c7c;
   }
   .top .media-icons a:nth-child(1):hover {
-    color: #4267b2;
+    color: #ce1260;
     background: #fff;
   }
   .top .media-icons a:nth-child(2) {
@@ -51,7 +51,7 @@ footer {
     background: #fff;
   }
   .top .media-icons a:nth-child(3) {
-    background: #e1306c;
+    background: #8b29ed;
   }
   .top .media-icons a:nth-child(3):hover {
     color: #e1306c;
@@ -68,7 +68,7 @@ footer {
     background: #ff0000;
   }
   .top .media-icons a:nth-child(5):hover {
-    color: #ff0000;
+    color: #383434;
     background: #fff;
   }
   
