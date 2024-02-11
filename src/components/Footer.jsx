@@ -12,11 +12,9 @@ const Footer = () => {
                         <span className="logo_name"><span style={{ color: "#f43f5e" }}>Book</span>Swap</span>
                     </div>
                     <div className="media-icons">
-                        <Link to="/"><i className="fab fa-facebook-f"></i></Link>
-                        <Link to="/"><i className="fab fa-twitter"></i></Link>
-                        <Link to="/"><i className="fab fa-instagram"></i></Link>
-                        <Link to="/"><i className="fab fa-linkedin-in"></i></Link>
-                        <Link to="/"><i className="fab fa-youtube"></i></Link>
+                        <Link to="https://www.instagram.com/thejalajpandey/"><i className="fab fa-instagram"></i></Link>
+                        <Link to="https://www.linkedin.com/in/jalaj-pandey/"><i className="fab fa-linkedin-in"></i></Link>
+                        <Link to="https://github.com/jalaj-pandey"><i className="fa-brands fa-github"></i></Link>
                     </div>
                 </div>
                 <div className="link-boxes">
@@ -36,22 +34,18 @@ const Footer = () => {
                         <li><Link to="/login">Sign-in</Link></li>
                         <li><Link to="/sign-up">Join Free</Link></li>
                     </ul>
-                    <ul className="box">
-                        <li className="link_name">Top Categories</li>
-                        <li><Link to="/c/61554bfe801949ad7b9be4ff">Tent Notes</Link></li>                            <li><Link to="/c/61554c43d2a6b15f764aff36">Water Notes</Link></li>
-                        <li><Link to="c/61554c63dfd6a37d71449b5c">Survivalist Notes</Link></li>
-                    </ul>
+
                     <ul className="box input-box">
                         <li className="link_name">About BookSwap</li>
                         <li style={{ color: "#F7FFFF" }}>
-                            An online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee
+                        Browse, buy, and sell with ease on our Second-Hand Book Buy and Sell Project. 
                         </li>
                     </ul>
                 </div>
             </div>
             <div className="bottom-details">
                 <div className="bottom_text">
-                    <span className="copyright_text">Copyright © 2023 <Link to="/">BookSwap</Link></span>
+                    <span className="copyright_text">Copyright © 2024 <Link to="/">BookSwap</Link></span>
                     <span className="policy_terms">
                         <Link to="/">Privacy policy</Link>
                         <Link to="/">Terms & condition</Link>
