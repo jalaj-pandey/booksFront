@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import bookpic from '../assets/bsell.png'
+import bookpics from '../assets/bsell.png'
 
 const SellYourBookBanner = () => {
   return (
@@ -11,7 +11,7 @@ const SellYourBookBanner = () => {
                 <Link to = "/shop" className='mt-12 block'><button className='bg-rose-500 text-white font-semibold px-5 py-2 rounded hover:bg-black transition-all duration-300'>Sell Here</button></Link>
             </div>
             <div className='w-96'>
-                <img src={bookpic} alt="" />
+                <img src={bookpics} alt="" />
             </div>
         </div>
     </div>
