@@ -47,7 +47,7 @@ const UploadBook = () => {
   }
   console.log(bookObject);
   // sending data to DB
-  fetch("https://bookswap-4zmq.onrender.com/upload-book", {
+  fetch("https://swap-book.netlify.com/upload-book", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
