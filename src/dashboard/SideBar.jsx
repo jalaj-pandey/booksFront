@@ -19,14 +19,14 @@ const SideBar = () => {
       <Sidebar.Items>
         <Sidebar.ItemGroup>
           
-          <Sidebar.Item href="/admin/dashboard/upload" icon={HiOutlineCloudUpload}>
+          <Sidebar.Item to="/admin/dashboard/upload" icon={HiOutlineCloudUpload}>
             Upload Books
           </Sidebar.Item>
-          <Sidebar.Item href="/admin/dashboard/manage" icon={HiShoppingBag}>
+          <Sidebar.Item to="/admin/dashboard/manage" icon={HiShoppingBag}>
             Manage Books
           </Sidebar.Item>
           
-          <Sidebar.Item href="/logout" icon={HiArrowSmRight}>
+          <Sidebar.Item to="/logout" icon={HiArrowSmRight}>
             Log Out
           </Sidebar.Item>
         </Sidebar.ItemGroup>
