@@ -5,7 +5,7 @@ import { Table } from 'flowbite-react';
 const ManageBooks = () => {
   const [allBooks, setAllBooks] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/all-books/")
+    fetch("https://bookswap-4zmq.onrender.com/all-books/")
     .then((res) => res.json())
     .then((data) => {
         setAllBooks(data);
@@ -13,7 +13,7 @@ const ManageBooks = () => {
   },[]);
   // Delete a Book
   const handleDelete =(id)=>{
-    fetch(`http://localhost:5000/book/${id}`, {
+    fetch(`https://bookswap-4zmq.onrender.com/book/${id}`, {
       method: "DELETE",
       body: JSON.stringify({id})
     }).then(res => res.json()).then(data => {
