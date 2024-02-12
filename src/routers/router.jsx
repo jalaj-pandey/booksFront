@@ -39,7 +39,7 @@ import Logout from "../components/Logout.jsx";
       },{
         path: "/book/:id",
         element: <SingleBookPage/>,
-        loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)
+        loader: ({params}) => fetch(`https://bookswap-4zmq.onrender.com/book/${params.id}`)
       }
 
     ]
@@ -63,7 +63,7 @@ import Logout from "../components/Logout.jsx";
         {
           path: "/admin/dashboard/edit-book/:id",
           element: <EditBook/>,
-          loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)
+          loader: ({params}) => fetch(`https://bookswap-4zmq.onrender.com/book/${params.id}`)
         }
       ]
     },
