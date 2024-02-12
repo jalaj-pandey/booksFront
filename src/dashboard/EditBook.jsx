@@ -49,7 +49,7 @@ const EditBook = () => {
     bookTitle, author, imageURL, bookDescription,category, bookPrice, sellerID
   }
   // sending data to DB
-  fetch(`http://localhost:5000/book/${id}`,{
+  fetch(`https://bookswap-4zmq.onrender.com/book/${id}`,{
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
