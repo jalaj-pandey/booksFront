@@ -19,7 +19,7 @@ const SideBar = () => {
       <Sidebar.Items>
         <Sidebar.ItemGroup>
           
-          <Sidebar.Item href="https://swap-book.netlify.app/admin/dashboard/upload" icon={HiOutlineCloudUpload}>
+          <Sidebar.Item href="/admin/dashboard/upload" icon={HiOutlineCloudUpload}>
             Upload Books
           </Sidebar.Item>
           <Sidebar.Item href="/admin/dashboard/manage" icon={HiShoppingBag}>
