@@ -3,8 +3,8 @@ import BannerCard from '../home/BannerCard'
 
 const Banner = () => {
   return (
-    <div className='px-4 lg:px-24 bg-teal-300 flex items-center'>
-        <div className='flex w-full flex-col md:flex-row justify-between items-center gap-12 py-40'>
+    <div className='px-4 lg:px-24 bg-teal-300 flex items-center md-max-w-screen-md'>
+        <div className='flex w-full flex-col md:flex-row justify-between items-center gap-12 py-40 ' >
             {/* LEFT SIDE */}
             <div className='md:w-1/2 space-y-8 h-full'>
                 <h2 className='text-5xl font-bold leading-snug text-black'>Buy And Sell Your Books<br/><span className='text-rose-600'>For The Best Price</span></h2>
@@ -16,7 +16,7 @@ const Banner = () => {
             </div>
 
             {/* RIGHT SIDE */}
-            <div >
+            <div className=' sm:h-full -mb-20' >
                 <BannerCard/>
             </div>
         </div>
