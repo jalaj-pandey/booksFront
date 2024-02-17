@@ -35,7 +35,6 @@ const Navbar = () => {
     { link: "About", path: "/about" },
     { link: "Shop", path: "/shop" },
     { link: "Sell Your Book", path: "/admin/dashboard" },
-    { link: "Blog", path: "/blog" },
   ];
 
   return (
@@ -51,7 +50,7 @@ const Navbar = () => {
             to="/"
             className="text-2xl font-bold text-rose-500 flex item-center gap-2"
           >
-            <FaBookOpenReader className="inline-block" />
+            <FaBookOpenReader className="inline-block fill-black m-1 " />
             BookSwap
           </Link>
           {/* Nav Items for large devices */}
@@ -93,7 +92,7 @@ const Navbar = () => {
         </div>
         {/* Nav Items for small devices */}
         <div
-          className={`space-y-4 px-4 mt-12 py-7 bg-rose-500 ${
+          className={`space-y-4 px-4 mt-14 py-5 bg-rose-400 m ${
             isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
           }`}
         >
