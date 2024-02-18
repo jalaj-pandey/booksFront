@@ -2,7 +2,7 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 
 const SingleBookPage = () => {
-    const { bookTitle, bookDescription,imageURL,bookPrice} = useLoaderData();
+    const { bookTitle, bookDescription,imageURL,bookPrice,category} = useLoaderData();
   return (
       <div className='px-4 lg:px-24 bg-green-100 flex items-center md-max-w-screen-md'>
   <div className='flex flex-row w-full md:flex-row justify-between items-center gap-16 py-32'>
