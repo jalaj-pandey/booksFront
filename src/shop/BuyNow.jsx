@@ -36,7 +36,7 @@ const BuyNow = () => {
           });
     
           if (response.ok) {
-            console.log('Form submitted successfully!');
+            alert('Form submitted successfully!');
           } else {
             console.error('Error submitting form:', response.statusText);
           }
@@ -52,11 +52,6 @@ const BuyNow = () => {
         setFormData({ ...formData, [name]: value });
       };
     
-    //   const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     // Implement your checkout logic here
-    //     console.log('Form submitted:', formData);
-    //   };
 
   return (
     <>
