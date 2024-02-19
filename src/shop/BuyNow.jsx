@@ -3,15 +3,36 @@ import React, { useState } from 'react'
 import QRCode from 'react-qr-code';
 
 const BuyNow = () => {
+    const [formData, setFormData] = useState({
+        fullName: '',
+        email: '',
+        address: '',
+        mobileNumber: '',
+        Tid: '',
+        qrCode: 'https://swap-book.netlify.app/',
+      });
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const form = e.target;
+        const fullName = form.fullName.value;
+        const email = form.email.value;
+        const address = form.address.value;
+        const mobileNumber = form.mobileNumber.value;
+        const Tid = form.Tid.value;
+        
+        
+        const ckdata = {
+            fullName,email,address,mobileNumber,Tid
+          }
+        
         try {
           const response = await fetch('https://bookswap-4zmq.onrender.com/api/checkout', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
-            body: JSON.stringify(formData),
+            body: JSON.stringify(ckdata),
           });
     
           if (response.ok) {
@@ -24,14 +45,7 @@ const BuyNow = () => {
         }
       };
     
-    const [formData, setFormData] = useState({
-        fullName: '',
-        email: '',
-        address: '',
-        mobileNumber: '',
-        qrCode: 'https://swap-book.netlify.app/',
-        Tid: '',
-      });
+    
     
       const handleChange = (e) => {
         const { name, value } = e.target;
@@ -123,7 +137,7 @@ const BuyNow = () => {
           </div>
         </div>
 
-        <button type="submit" onClick={handleSubmit} className="bg-rose-600 text-white py-2 px-4 rounded-md hover:bg-rose-700">
+        <button type="submit" className="bg-rose-600 text-white py-2 px-4 rounded-md hover:bg-rose-700">
           Place Order
         </button>
       </form>
