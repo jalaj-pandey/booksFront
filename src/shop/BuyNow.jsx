@@ -6,7 +6,7 @@ const BuyNow = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch('http://192.168.1.22:5000/api/checkout', {
+          const response = await fetch('https://bookswap-4zmq.onrender.com/api/checkout', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
