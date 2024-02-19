@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const SingleBookPage = () => {
     const { bookTitle, bookDescription,imageURL,bookPrice,category} = useLoaderData();
@@ -10,9 +10,10 @@ const SingleBookPage = () => {
     <div className='w-full md:w-1/3 flex flex-col justify-around text-center '>
       <img className="h-92 rounded mx-auto" src={imageURL} alt="" />
       <div className=" mt-10 -mb-16">
-        <button className='bg-rose-600 mx-4 px-8 py-3 text-white font-medium hover:bg-black transition-all ease-in duration-200 '>
+        <Link to = "/checkout" className='mt-12 block'><button className='bg-rose-600 mx-4 px-8 py-3 text-white font-medium hover:bg-black transition-all ease-in duration-200 '>
           Buy Now 
         </button>
+        </Link>
       </div>
     </div>
 
