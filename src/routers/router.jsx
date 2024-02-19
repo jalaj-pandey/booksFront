@@ -17,6 +17,7 @@ import SignUp from "../components/SignUp.jsx";
 import Login from "../components/Login.jsx";
 import PrivateRoute from "../PrivateRoute/PrivateRoute.jsx";
 import Logout from "../components/Logout.jsx";
+import BuyNow from "../shop/BuyNow.jsx";
 
   const router = createBrowserRouter([
     {
