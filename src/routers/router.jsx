@@ -80,6 +80,10 @@ import Logout from "../components/Logout.jsx";
     {
       path: "logout",
       element: <PrivateRoute><Logout/></PrivateRoute>
+    },
+      {
+      path: "checkout",
+      element: <BuyNow/>
     }
   ]);
 
