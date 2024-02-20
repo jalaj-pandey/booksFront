@@ -36,7 +36,7 @@ const BuyNow = () => {
           });
     
           if (response.ok) {
-            alert('Form submitted successfully!');
+            alert('The Seller will contact you soon!');
           } else {
             console.error('Error submitting form:', response.statusText);
           }
