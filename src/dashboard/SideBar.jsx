@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-=======
-'use client';
->>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
 import React, { useContext } from 'react'
 import { Sidebar } from 'flowbite-react';
 import { HiArrowSmRight,  HiOutlineCloudUpload, HiShoppingBag,  } from 'react-icons/hi';
