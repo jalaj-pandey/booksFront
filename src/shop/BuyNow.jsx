@@ -27,11 +27,8 @@ const BuyNow = () => {
           }
         
         try {
-<<<<<<< HEAD
-          const response = await fetch('http://localhost:5000/api/checkout', {
-=======
           const response = await fetch('https://bookswap-4zmq.onrender.com/api/checkout', {
->>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
+
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -40,11 +37,7 @@ const BuyNow = () => {
           });
     
           if (response.ok) {
-<<<<<<< HEAD
-            alert('Form submitted successfully!');
-=======
             alert('The Seller will contact you soon!');
->>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
           } else {
             console.error('Error submitting form:', response.statusText);
           }
@@ -60,14 +53,11 @@ const BuyNow = () => {
         setFormData({ ...formData, [name]: value });
       };
     
-<<<<<<< HEAD
     //   const handleSubmit = (e) => {
     //     e.preventDefault();
     //     // Implement your checkout logic here
     //     console.log('Form submitted:', formData);
     //   };
-=======
->>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
 
   return (
     <>
@@ -158,8 +148,5 @@ const BuyNow = () => {
   )
 }
 
-<<<<<<< HEAD
 export default BuyNow
-=======
-export default BuyNow
->>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
+
