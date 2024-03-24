@@ -17,6 +17,8 @@ import SignUp from "../components/SignUp.jsx";
 import Login from "../components/Login.jsx";
 import PrivateRoute from "../PrivateRoute/PrivateRoute.jsx";
 import Logout from "../components/Logout.jsx";
+import BuyNow from "../shop/BuyNow.jsx";
+import SearchResultsPage from "../components/SearchResultsPage.jsx";
 
   const router = createBrowserRouter([
     {
@@ -80,6 +82,14 @@ import Logout from "../components/Logout.jsx";
     {
       path: "logout",
       element: <PrivateRoute><Logout/></PrivateRoute>
+    },
+    {
+      path: "checkout",
+      element: <BuyNow/>
+    },
+    {
+      path: "search",
+      element: <SearchResultsPage/>
     }
   ]);
 

@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { Table } from 'flowbite-react';
+import { AuthContext } from '../contects/AuthProviders';
 
 const ManageBooks = () => {
+
+  const {user} = useContext(AuthContext);
+  
   const [allBooks, setAllBooks] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/all-books/")
+    fetch(`http://localhost:5000/user-books/${user.email}`)
     .then((res) => res.json())
     .then((data) => {
         setAllBooks(data);
       });
   },[]);
+
   // Delete a Book
   const handleDelete =(id)=>{
     fetch(`http://localhost:5000/book/${id}`, {
@@ -21,6 +26,7 @@ const ManageBooks = () => {
       
     })
   }
+  let serialNumber = 1;
   return (
     <div className='px-4 my-12'>
       {/* TABLE FOR BOOK DATA */}
@@ -38,9 +44,10 @@ const ManageBooks = () => {
       </Table.Head>
       
         {
-          allBooks.map((book, index) => <Table.Body className="divide-y" key={book._id}> 
+          allBooks.map((book) => <Table.Body className="divide-y" key={book._id}> 
+          {book.sellerID === user.email && (
           <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-          <Table.Cell>{index+1}</Table.Cell>
+          <Table.Cell>{serialNumber++}</Table.Cell>
           <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
             {book.bookTitle}
           </Table.Cell>
@@ -52,11 +59,13 @@ const ManageBooks = () => {
             <Link to={
               `/admin/dashboard/edit-book/${book._id}`
             } >
+              
               Edit
             </Link></button>
             <button onClick={()=>{handleDelete(book._id)}} className='bg-red-600 px-4 py-1 font-semibold text-white rounded-sm hover:bg-teal-500'>Delete</button>
           </Table.Cell>
         </Table.Row>
+        )}
           </Table.Body>)
         }
     </Table>

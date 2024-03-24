@@ -6,7 +6,7 @@ const Shop = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(()=>{
-    fetch("http://localhost:5000/all-books").then(res =>res.json()).then(data =>setBooks(data));
+    fetch("http://192.168.137.1:5000/all-books").then(res =>res.json()).then(data =>setBooks(data));
   })
   return (
     <div className='mt-28 px-4 lg:px-24'>
@@ -29,7 +29,7 @@ const Shop = () => {
             <h4 className="tracking-tight text-gray-900 dark:text-white pb-2">
             {book.category}
             </h4>
-            <button className='bg-rose-500 w-full  font-semibold text-white py-2 rounded'>  Buy Now</button>
+            <button className='bg-rose-500 w-full  font-semibold text-white py-2 rounded'>  Buy Now </button>
             </Link>
           </Card> )
         }

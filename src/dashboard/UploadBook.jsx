@@ -13,6 +13,7 @@ const UploadBook = () => {
     "Fantasy",
     "Religion",
     "Horror",
+    "Psychology",
     "Romance",
     "Thriller",
     "History",
@@ -40,7 +41,7 @@ const UploadBook = () => {
   const category = form.categoryName.value;
   const bookDescription = form.bookDescription.value;
   const bookPrice = form.bookPrice.value;
-  const sellerID = from.sellerID.value;
+  const sellerID = form.sellerID.value;
 
   const bookObject = {
     bookTitle, author, imageURL, bookDescription,category, bookPrice, sellerID

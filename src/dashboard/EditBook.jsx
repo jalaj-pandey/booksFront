@@ -16,6 +16,7 @@ const EditBook = () => {
     "Fantasy",
     "Religion",
     "Horror",
+    "psychology",
     "Romance",
     "Thriller",
     "History",
