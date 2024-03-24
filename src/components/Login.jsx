@@ -2,11 +2,8 @@ import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../contects/AuthProviders";
 import googleLogo from "../assets/google-logo.svg";
-<<<<<<< HEAD
 import Navbar from '../components/Navbar'
-=======
-import Navbar from "./Navbar";
->>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
+
 
 
 const Login = () => {
