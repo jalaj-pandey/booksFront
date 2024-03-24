@@ -9,7 +9,7 @@ const BuyNow = () => {
         address: '',
         mobileNumber: '',
         Tid: '',
-        qrCode: 'https://swap-book.netlify.app/',
+        qrCode: 'upi://pay?pa=7302504451@ybl&pn=Jalaj%20Pandey&tn=undefined&am=undefined',
       });
 
     const handleSubmit = async (e) => {
