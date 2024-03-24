@@ -6,11 +6,8 @@ const Shop = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(()=>{
-<<<<<<< HEAD
-    fetch("http://192.168.137.1:5000/all-books").then(res =>res.json()).then(data =>setBooks(data));
-=======
+
     fetch("https://bookswap-4zmq.onrender.com/all-books").then(res =>res.json()).then(data =>setBooks(data));
->>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
   })
   return (
     <div className='mt-28 px-4 lg:px-24'>
