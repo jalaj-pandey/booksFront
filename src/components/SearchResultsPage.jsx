@@ -14,7 +14,7 @@ const SearchResultsPage = () => {
     const fetchSearchResults = async () => {
       try {
         const response = await fetch(
-          `http://192.168.137.1:5000/api/books/search/${searchQuery}`
+          `https://bookswap-4zmq.onrender.com/api/books/search/${searchQuery}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch search results");
