@@ -18,10 +18,7 @@ import Login from "../components/Login.jsx";
 import PrivateRoute from "../PrivateRoute/PrivateRoute.jsx";
 import Logout from "../components/Logout.jsx";
 import BuyNow from "../shop/BuyNow.jsx";
-<<<<<<< HEAD
 import SearchResultsPage from "../components/SearchResultsPage.jsx";
-=======
->>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
 
   const router = createBrowserRouter([
     {
