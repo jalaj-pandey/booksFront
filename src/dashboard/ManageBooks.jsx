@@ -9,7 +9,11 @@ const ManageBooks = () => {
   
   const [allBooks, setAllBooks] = useState([]);
   useEffect(() => {
+<<<<<<< HEAD
     fetch(`http://localhost:5000/user-books/${user.email}`)
+=======
+    fetch(`https://bookswap-4zmq.onrender.com/user-books/${user.email}`)
+>>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
     .then((res) => res.json())
     .then((data) => {
         setAllBooks(data);
@@ -18,7 +22,7 @@ const ManageBooks = () => {
 
   // Delete a Book
   const handleDelete =(id)=>{
-    fetch(`http://localhost:5000/book/${id}`, {
+    fetch(`https://bookswap-4zmq.onrender.com/book/${id}`, {
       method: "DELETE",
       body: JSON.stringify({id})
     }).then(res => res.json()).then(data => {

@@ -10,7 +10,11 @@ const SingleBookPage = () => {
     <div className='w-full md:w-1/3 flex flex-col justify-around text-center '>
       <img className="h-92 rounded mx-auto" src={imageURL} alt="" />
       <div className=" mt-10 -mb-16">
+<<<<<<< HEAD
       <Link to = "/checkout" className='mt-12 block'><button className='bg-rose-600 mx-4 px-8 py-3 text-white font-medium hover:bg-black transition-all ease-in duration-200 '>
+=======
+        <Link to = "/checkout" className='mt-12 block'><button className='bg-rose-600 mx-4 px-8 py-3 text-white font-medium hover:bg-black transition-all ease-in duration-200 '>
+>>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
           Buy Now 
         </button>
         </Link>

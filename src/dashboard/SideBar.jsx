@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+'use client';
+>>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
 import React, { useContext } from 'react'
 import { Sidebar } from 'flowbite-react';
 import { HiArrowSmRight,  HiOutlineCloudUpload, HiShoppingBag,  } from 'react-icons/hi';
@@ -9,7 +13,7 @@ const SideBar = () => {
   const {user} = useContext(AuthContext)
   return (
     <div>
-        <Sidebar  >
+        <Sidebar>
       <Sidebar.Logo href="/" img={user?.photoURL || logo} imgAlt="BookSwap logo" className='w-16 h-16'>
         <p>
           {

@@ -44,7 +44,11 @@ const Footer = () => {
                 <Link to="/about">About us</Link>
               </li>
               <li>
+<<<<<<< HEAD
                 <Link to="/login">Get started</Link>
+=======
+                <Link to="/signin">Get started</Link>
+>>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
               </li>
             </ul>
             <ul className="box">

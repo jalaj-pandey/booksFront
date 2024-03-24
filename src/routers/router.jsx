@@ -18,7 +18,10 @@ import Login from "../components/Login.jsx";
 import PrivateRoute from "../PrivateRoute/PrivateRoute.jsx";
 import Logout from "../components/Logout.jsx";
 import BuyNow from "../shop/BuyNow.jsx";
+<<<<<<< HEAD
 import SearchResultsPage from "../components/SearchResultsPage.jsx";
+=======
+>>>>>>> 011d601e4638ee1a54fba75e4da82433f7134ac2
 
   const router = createBrowserRouter([
     {
@@ -41,7 +44,7 @@ import SearchResultsPage from "../components/SearchResultsPage.jsx";
       },{
         path: "/book/:id",
         element: <SingleBookPage/>,
-        loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)
+        loader: ({params}) => fetch(`https://bookswap-4zmq.onrender.com/book/${params.id}`)
       }
 
     ]
@@ -65,7 +68,7 @@ import SearchResultsPage from "../components/SearchResultsPage.jsx";
         {
           path: "/admin/dashboard/edit-book/:id",
           element: <EditBook/>,
-          loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)
+          loader: ({params}) => fetch(`https://bookswap-4zmq.onrender.com/book/${params.id}`)
         }
       ]
     },
