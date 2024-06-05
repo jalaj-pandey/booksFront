@@ -35,7 +35,7 @@ const Navbar = () => {
     { link: "About", path: "/about" },
     { link: "Shop", path: "/shop" },
     { link: "Sell Your Book", path: "/admin/dashboard/upload" },
-    { link: "Donate", path: "/" },
+    { link: "Donate", path: "/admin/dashboard/donate" },
   ];
 
   return (
