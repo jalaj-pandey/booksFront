@@ -15,6 +15,7 @@ import ManageBooks from "../dashboard/ManageBooks.jsx";
 import EditBook from "../dashboard/EditBook.jsx";
 import SignUp from "../components/SignUp.jsx";
 import Login from "../components/Login.jsx";
+import Donate from "../components/Donate.jsx";
 import PrivateRoute from "../PrivateRoute/PrivateRoute.jsx";
 import Logout from "../components/Logout.jsx";
 import BuyNow from "../shop/BuyNow.jsx";
@@ -61,6 +62,10 @@ import SearchResultsPage from "../components/SearchResultsPage.jsx";
         {
           path: "/admin/dashboard/manage",
           element: <ManageBooks/>
+        },
+          {
+          path: "/admin/dashboard/donate",
+          element: <Donate/>
         },
         {
           path: "/admin/dashboard/edit-book/:id",
